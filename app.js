@@ -16,7 +16,6 @@ const productRoutes = require('./routes/product');
 const orderRoutes = require('./routes/order');
 const paymentRoutes = require('./routes/payment');
 const nannyRoutes = require('./routes/nanny');
-const whatsappOtpRoutes = require('./routes/whatsappOtp');
 
 //CONNECTION
 mongoose
@@ -42,7 +41,6 @@ app.use('/api', productRoutes);
 app.use('/api', orderRoutes);
 app.use('/api', paymentRoutes);
 app.use('/api', nannyRoutes);
-app.use('/api', whatsappOtpRoutes);
 
 //PORT listening
 app.listen(port, () => {
